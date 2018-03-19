@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hunper</string>
+    <string name="login_social">Se connecter avec votre compte</string>
+</resources>

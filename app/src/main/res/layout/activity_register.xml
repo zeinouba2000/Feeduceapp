@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zeineb.myfirstapp.RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:src="@drawable/social"
+                    android:padding="25dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="3dp"
+                        android:src="@drawable/usericon" />
+
+                    <EditText
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/ubuntulight"
+                        android:hint="Username"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="5dp"
+                        android:src="@drawable/mail" />
+
+                    <EditText
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/ubuntulight"
+                        android:hint="Email address"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="3dp"
+                        android:src="@drawable/locked" />
+
+                    <LinearLayout
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:fontFamily="@font/ubuntulight"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:textSize="17dp" />
+
+
+                        <EditText
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:fontFamily="@font/ubuntulight"
+                            android:hint="Confirm password"
+                            android:inputType="textPassword"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pickup Details"
+                        android:textSize="19dp"
+                        android:textStyle="italic|bold"
+                        android:layout_gravity="center"
+
+                        android:fontFamily="@font/ubuntulight"
+                        />
+
+                    <EditText
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:hint="Address Line 1"
+                        android:fontFamily="@font/ubuntulight"/>
+
+                    <EditText
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:hint="Address Line 2"
+                        android:fontFamily="@font/ubuntulight"/>
+
+                    <LinearLayout
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:drawSelectorOnTop="true"
+                            android:entries="@array/countries"
+                            android:fontFamily="@font/ubuntulight"
+                            android:textAlignment="center"
+                            />
+
+                        <EditText
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:hint="City"
+                            android:fontFamily="@font/ubuntulight"/>
+
+                        <EditText
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:inputType="textPostalAddress"
+                            android:hint="Postcode/Zipcode"/>
+
+                        <EditText
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:inputType="phone"
+                            android:hint="Telephone Number"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Are you a :"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/ubuntulight"
+                        android:layout_marginLeft="40dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Food charity"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/ubuntulight"/>
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="Food donor"
+                            android:fontFamily="@font/ubuntulight"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Spinner
+                    android:layout_width="310dp"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/donorstatus"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/ubuntulight" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="20dp"
+                android:fontFamily="@font/ubuntulight"
+                android:background="@color/appcolor"
+                android:textColor="#f5f4f4"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
